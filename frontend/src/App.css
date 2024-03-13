@@ -1,0 +1,63 @@
+
+.navbar-1:hover{
+    color: #e0c374;
+    font-weight: bold;
+    font-family: serif;
+    background-color: black;
+    padding: 5px;
+}
+.navbar-1{
+    color: black;
+    font-family: serif;
+    font-weight: bold;
+    background-color: #e0c374;
+    padding: 5px;
+
+}
+.navbar-2:hover{
+    color: black;
+    font-family: serif;
+    font-weight: bold;
+    background-color: #e0c374;
+    padding: 5px;
+}
+.navbar-2{
+color: #e0c374;
+font-weight: bold;
+font-family: serif;
+background-color: black;
+padding: 5px;
+
+}
+.search::placeholder{
+    color: white;
+    font-size: 20px;
+    font-family: cursive ;
+}
+.bg-img{
+    background-image: url(https://i.pinimg.com/564x/7e/75/dc/7e75dcfc1a29ebb757ae2410959fbf80.jpg);
+    height: 80vh;
+    background-size:cover;
+}
+.bg-img-1{
+    background-image: url(https://www.lamartinierelucknow.org/wp-content/uploads/Aerial-View-of-Constantia1-1000x450.jpg);
+    height: 80vh;
+    background-size:cover;
+ 
+
+}
+.bg-img-signup{
+    background-image: url(https://i.pinimg.com/236x/27/66/8c/27668cab2abb16276f1398926152c95f.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.search::placeholder{
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: 600;
+    color: grey;
+}
+.input{
+    background-color:#e0c374;
+    font-family: monospace;
+}
