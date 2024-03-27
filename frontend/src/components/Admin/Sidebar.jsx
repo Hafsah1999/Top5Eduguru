@@ -18,9 +18,7 @@ const Sidebar = () => {
         <Link to='/Admin/Manage'>
           <p className="bg-black text-white py-2 hover:bg-white hover:text-black mb-2 text-center mx-3 rounded fs-5">Manage College </p>
         </Link>
-        <Link to='/Admin/ManageUniversity'>
-          <p className="bg-black text-white py-2 hover:bg-white hover:text-black mb-2 text-center mx-3 rounded fs-5">Manage University </p>
-        </Link>
+    
         <Link to='/Admin/AddPlayway'>
           <p className="bg-black text-white py-2  hover:bg-white hover:text-black mb-2 text-center mx-3 rounded fs-5">Playway </p>
         </Link>

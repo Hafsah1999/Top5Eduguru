@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { useEffect, useState } from 'react';
 // import RatingComponent from './Rating';
 
-const Review = () => {
+const PlaywayReview = () => {
 
 
 
@@ -16,7 +16,7 @@ const Review = () => {
     const { id } = useParams();
     const [CollegeList, setCollegeList] = useState([]);
     const fetchUserData = async () => {
-        const res = await fetch('http://localhost:5000/college/getbyid/' + id);
+        const res = await fetch('http://localhost:5000/playway/getbyid/' + id);
         console.log(res.status);
         if (res.status === 200) {
             const data = await res.json();
@@ -40,7 +40,7 @@ const Review = () => {
 
         onSubmit: async (values, action) => {
             console.log(values);
-            const res = await fetch("http://localhost:5000/reviews/add", {
+            const res = await fetch("http://localhost:5000/playwayReview/add", {
                 method: "POST",
                 body: JSON.stringify(values),
                 headers: { "Content-type": "application/json" },
@@ -59,6 +59,8 @@ const Review = () => {
 
     });
 
+
+
     return (
         <>
 
@@ -67,8 +69,8 @@ const Review = () => {
                 CollegeList !== null ? (
 
                     <div className="conatiner p-5" style={{ background: "linear-gradient(to bottom,white,#e0c374,#e0c374" }}>
-                            <div className="card p-3 border-none bg-transparent shadow">
-                        <div className="row px-5">
+                        <div className="card p-3 border-none bg-transparent shadow">
+                            <div className="row px-5">
 
                                 <div className="col-md-4  flex items-center justify-center">
                                     <img src={'http://localhost:5000/' + CollegeList.image} onClick={window.scrollTo(0, 0)} alt="" className="img-fluid mb-3" />
@@ -101,7 +103,7 @@ const Review = () => {
                                             />
                                         </div>
 
-                                        
+
                                         <div className="form-group">
                                             <label htmlFor="rating" className=" mb-2">Rating</label><br />
                                             <input type="number"
@@ -113,9 +115,8 @@ const Review = () => {
                                                 value={reviewForm.values.rating} />
                                         </div>
 
-
                                         <button type="submit" className="bg-blue-500 font-semibold py-2  text-white rounded mb-5  fs-5 font-serif px-3">Submit Review</button>
-                                        
+
                                     </form>
                                 </div>
                             </div>
@@ -135,4 +136,4 @@ const Review = () => {
     )
 }
 
-export default Review
+export default PlaywayReview

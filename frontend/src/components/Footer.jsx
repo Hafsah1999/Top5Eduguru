@@ -6,7 +6,7 @@ const Footer = () => {
     const location = useLocation();
 
     // Specify the paths where you want to hide the Navbar
-    const hideFooterPaths = ['/login','/Signup','/Admin/ManageReviews','/Admin/Dashboard','/Admin/Manage','/Admin/AddPlayway','/Admin/AddSchool','/Admin/AddCollege','/Admin/AddUniversity','/Admin/ManageSchool','/Admin/ManagePlayway','/Admin/ManageUniversity','/Admin/Manageuser'];
+    const hideFooterPaths = ['/Login','/Signup','/Admin/ManageReviews','/Admin/UpdateCollege','/Admin/Dashboard','/Admin/Manage','/Admin/AddPlayway','/Admin/AddSchool','/Admin/AddCollege','/Admin/AddUniversity','/Admin/ManageSchool','/Admin/ManagePlayway','/Admin/ManageUniversity','/Admin/Manageuser'];
   
     // Check if the current path is in the hideNavbarPaths array
     const shouldHideFooter = hideFooterPaths.includes(location.pathname);

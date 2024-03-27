@@ -23,7 +23,7 @@ const Navbar = () => {
     const location = useLocation();
 
     // Specify the paths where you want to hide the Navbar
-    const hideNavbarPaths = ['/login', '/Signup', '/AddCollege','/Admin/Dashboard','/Admin/ManageReviews','/Admin/Manage','/Admin/AddPlayway','/Admin/AddSchool','/Admin/AddCollege','/Admin/AddUniversity','/Admin/ManageSchool','/Admin/ManagePlayway','/Admin/ManageUniversity','/Admin/Manageuser' ];
+    const hideNavbarPaths = ['/Login', '/Signup', '/AddCollege','/Admin/Dashboard','/Admin/ManageReviews','/Admin/Manage','/Admin/AddPlayway','/Admin/AddSchool','/Admin/AddCollege','/Admin/AddUniversity','/Admin/ManageSchool','/Admin/ManagePlayway','/Admin/ManageUniversity','/Admin/Manageuser' ];
 
     // Check if the current path is in the hideNavbarPaths array
     const shouldHideNavbar = hideNavbarPaths.includes(location.pathname);

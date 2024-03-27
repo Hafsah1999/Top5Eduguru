@@ -20,7 +20,7 @@ import Footer from './components/Footer'
 import Manage from './components/Admin/ManageCollege'
 import MCA from './components/Courses/MCA'
 import Admin from './components/Admin/Index'
-// import AdminAuth from './AdminAuth'
+import AdminAuth from './AdminAuth'
 import Dashboard from './components/Admin/Dashboard'
 import UserAuth from './UserAuth'
 import { AppProvider } from './AppContext'
@@ -50,6 +50,8 @@ const App = () => {
             <Route path="/Signup" element={<Signup />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Review/:id" element={<UserAuth><Review /></UserAuth>} />
+            <Route path="/playwayReview/:id" element={<UserAuth><Review /></UserAuth>} />
+
 
             <Route path="/Playway" element={<Playway />} />
             <Route path="/All" element={<All />} />
@@ -60,8 +62,8 @@ const App = () => {
 
 
 
-            {/* <Route path='/Admin' element={<AdminAuth><Admin /></AdminAuth>}> */}
-            <Route path='/Admin' element={<Admin />}>
+            <Route path='/Admin' element={<AdminAuth><Admin /></AdminAuth>}>
+            {/* <Route path='/Admin' element={<Admin />}> */}
 
               <Route path='Dashboard' element={<Dashboard />} />
               <Route path="Manage" element={<Manage />} />

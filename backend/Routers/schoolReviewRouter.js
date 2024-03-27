@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const Model = require("../Models/FeedbackModel");
+const Model = require("../Models/SchoolReviewModel");
 
-router.post("/add", (req, res) => {
+
+  
+  router.post("/add", (req, res) => {
   console.log(req.body);
   //Storing data to MongoDb
   new Model(req.body).save() //to add the data in database
